@@ -1,0 +1,40 @@
+﻿
+@* for model *@
+@model ServiceStation.Web.Models.VehicleService
+
+
+@{
+	//for ViewData metod
+	//var service = ViewData["Service"] as VehicleService;
+	Layout = "_Layout2";
+}
+@* for ViewData Attribute *@
+<h1>@ViewData["PageTitle"]</h1>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>Title</th>
+			<th>Description</th>
+			<th>Cost</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			@* for ViewData *@
+			@* <td>@service.Title</td> *@
+			@* <td>@service.Description</td> *@
+			@* <td>@service.Cost</td> *@
+
+			@* for ViewBag *@
+			@* <td>@ViewBag.service.Title</td> *@
+			@* <td>@ViewBag.service.Description</td> *@
+			@* <td>@ViewBag.service.Cost</td> *@
+
+			@* for ViewBag *@
+			<td>@Model.Title</td>
+			<td>@Model.Description</td>
+			<td>@Model.Cost</td>
+
+		</tr>
+</table>
